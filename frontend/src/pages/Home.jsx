@@ -24,7 +24,7 @@ const Home = () => {
   }
 
   const gettext = async()=>{
-    const response = await fetch(`http://localhost:5000/api/text/${inputcode}`);
+    const response = await fetch(`https://text-share-final.onrender.com/${inputcode}`);
     const data = await response.json();
     setretreivedText(data.text || "text not found")
     setinputcode("")
