@@ -9,7 +9,7 @@ const Home = () => {
   const [inputcode, setinputcode] = useState("")
 
   const sharetext = async() => {
-    const response = await fetch('https://text-share-final.onrender.com/generate-code',{
+    const response = await fetch('https://text-share-final.onrender.com/api/text/generate-code',{
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text }), // eta frontend theke backend e jai mane body will contain text
@@ -24,7 +24,7 @@ const Home = () => {
   }
 
   const gettext = async()=>{
-    const response = await fetch(`https://text-share-final.onrender.com/${inputcode}`);
+    const response = await fetch(`https://text-share-final.onrender.com/api/text/${inputcode}`);
     const data = await response.json();
     setretreivedText(data.text || "text not found")
     setinputcode("")
