@@ -9,7 +9,7 @@ const Home = () => {
   const [inputcode, setinputcode] = useState("")
 
   const sharetext = async() => {
-    const response = await fetch('http://localhost:5000/api/text/generate-code',{
+    const response = await fetch('https://text-share-final.onrender.com/generate-code',{
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text }), // eta frontend theke backend e jai mane body will contain text
