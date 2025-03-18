@@ -35,7 +35,7 @@ return (
     
     <div className="text-center mb-8">
       <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-amber-400 pb-2">
-        TextyShare
+        PrettiShaee
       </h1>
       <p className="text-gray-400 text-lg">Share text snippets securely and effortlessly</p>
     </div>
