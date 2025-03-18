@@ -116,7 +116,7 @@ return (
         {retreivedText && (
           <div className="mt-6 bg-gray-800 p-6 rounded-lg border border-gray-700 w-full max-w-2xl shadow-md">
             <h3 className="text-lg font-medium text-gray-300 mb-3">Retrieved Text:</h3>
-            <p className="p-4 text-gray-200 bg-black rounded-md border border-gray-700 shadow-inner min-h-12">{retreivedText}</p>
+            <pre className="p-4 text-gray-200 bg-black rounded-md border border-gray-700 shadow-inner min-h-12">{retreivedText}</pre>
           </div>
         )}
       </div>
