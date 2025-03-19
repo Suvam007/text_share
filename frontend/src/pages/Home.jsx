@@ -118,7 +118,7 @@ return (
     <h3 className="text-lg font-medium text-gray-300 mb-3">Retrieved Text:</h3>
     <pre className="p-4 text-gray-200 bg-black rounded-md border border-gray-700 shadow-inner min-h-12 
                     max-h-60 overflow-auto break-words whitespace-pre-wrap">
-      {retrievedText}
+      
     </pre>
   </div>
 )}
